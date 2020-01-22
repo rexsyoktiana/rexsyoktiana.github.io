@@ -160,7 +160,10 @@ body.scale-effect .btn-holder .btn-play{transform:scale(28);-webkit-transform:sc
 #v-card-holder #v-card #profile{position:absolute;right:0;z-index:1;}
 #v-card-holder #v-card #profile img{width:400px;height:auto;}
 #v-card-holder #v-card #profile .slant{top:0;z-index:1;position:absolute;border-style:solid;border-width:400px 0 0 100px;border-color:rgba(223, 50, 50, 0) transparent transparent #06A763;}
-#v-card-holder #v-card #profile .add-btn{position:absolute;background-color:#1976D2;top:20%;right:86%;overflow:hidden;}
+#v-card-holder #v-card #profile .add-btn{
+    position:absolute;
+    background-color:#323232;top:20%;right:86%;overflow:hidden;
+}
 #v-card-holder #v-card #profile .add-btn i{font-size:35px;color:#fff;}
 @media screen and (max-width:767px){#v-card-holder #v-card{position:relative;width:100%;overflow:visible;z-index:1;top:34px;}
 #v-card-holder #v-card #profile{position:absolute;bottom:85%;left:0;width:150px;height:auto;margin-right:auto;margin-left:auto;z-index:1;background-color:transparent;}
