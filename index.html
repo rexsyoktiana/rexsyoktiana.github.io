@@ -88,11 +88,11 @@
                 <br>
 
                 <!--OPTIONS-->
-                <a href="#home"><i class="title-icon fa fa-user"></i>Home</a>
-                <a href="#about"><i class="title-icon fa fa-dashboard"></i>About</a>
-                <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
-                <a href="#skills"><i class="title-icon fa fa-sliders"></i>Skills</a>
-                <a href="#experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
+                <a href="#home" id="a-home" style="color:#1976D2"><i class="title-icon fa fa-user"></i>Home</a>
+                <a href="#about" id="a-about"><i class="title-icon fa fa-dashboard"></i>About</a>
+                <a href="#education" id="a-education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
+                <a href="#skills" id="a-skills"><i class="title-icon fa fa-sliders"></i>Skills</a>
+                <a href="#experience" id="a-experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
             </div>
 
             <!-- MENU BUTTON -->
@@ -247,8 +247,10 @@
         <div class="container">
             <!-- SECTION TITLE -->
             <div class="section-title">
-                <h4 class="text-uppercase text-center"><img src="./assets/download/images/icons/book.png"
-                        alt="demo">Education</h4>
+                <h4 class="text-uppercase text-center">
+                    <img src="./assets/download/images/icons/book.png" alt="demo">
+                    Education
+                </h4>
             </div>
 
             <div id="timeline-education">
@@ -825,6 +827,48 @@
     <script src="./assets/download/javascript/custom.js"></script>
     <script src="./assets/download/toggle/js.js"></script>
 
+    <script>
+        $("#a-home").click(function (e) {
+            e.preventDefault();
+            $("#a-home").css("color", "#1976D2");
+            $("#a-about").css("color", "#616161");
+            $("#a-education").css("color", "#616161");
+            $("#a-skills").css("color", "#616161");
+            $("#a-experience").css("color", "#616161");
+        })
+        $("#a-about").click(function (e) {
+            e.preventDefault();
+            $("#a-home").css("color", "#616161");
+            $("#a-about").css("color", "#1976D2");
+            $("#a-education").css("color", "#616161");
+            $("#a-skills").css("color", "#616161");
+            $("#a-experience").css("color", "#616161");
+        });
+        $("#a-education").click(function (e) {
+            e.preventDefault();
+            $("#a-home").css("color", "#616161");
+            $("#a-about").css("color", "#616161");
+            $("#a-education").css("color", "#1976D2");
+            $("#a-skills").css("color", "#616161");
+            $("#a-experience").css("color", "#616161");
+        });
+        $("#a-skills").click(function (e) {
+            e.preventDefault();
+            $("#a-home").css("color", "#616161");
+            $("#a-about").css("color", "#616161");
+            $("#a-education").css("color", "#616161");
+            $("#a-skills").css("color", "#1976D2");
+            $("#a-experience").css("color", "#616161");
+        });
+        $("#a-experience").click(function (e) {
+            e.preventDefault();
+            $("#a-home").css("color", "#616161");
+            $("#a-about").css("color", "#616161");
+            $("#a-education").css("color", "#616161");
+            $("#a-skills").css("color", "#616161");
+            $("#a-experience").css("color", "#1976D2");
+        });
+    </script>
 
 </body>
 
