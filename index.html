@@ -828,6 +828,9 @@
     <script src="./assets/download/toggle/js.js"></script>
 
     <script>
+        window.onbeforeunload = function(){
+            window.scrollTo(0,0);
+        }
         $("#a-home").click(function (e) {
             e.preventDefault();
             $("#a-home").css("color", "#1976D2");
