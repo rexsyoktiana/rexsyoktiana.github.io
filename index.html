@@ -186,7 +186,7 @@
                                 <!-- Telegram-->
                                 <a href=" https://t.me/rexsyoktiana" class="social  btn-floating white" target="_blank">
                                     <i class="fa fa-telegram"
-                                        style="font-size:33px;margin-top:0.5px;margin-left:-0.3px; color:#1565C0!important"></i>
+                                        style="font-size:33px;margin-top:0.5px;margin-left:-0.3px; color:#43baff!important"></i>
                                 </a>
                                 <!-- Github -->
                                 <a href=" https://github.com/rexsyoktiana" class="social  btn-floating white"
@@ -831,6 +831,14 @@
         window.onbeforeunload = function(){
             window.scrollTo(0,0);
         }
+        $("#scrollup").click(function (e) { 
+            e.preventDefault();
+            $("#a-home").css("color", "#1976D2");
+            $("#a-about").css("color", "#616161");
+            $("#a-education").css("color", "#616161");
+            $("#a-skills").css("color", "#616161");
+            $("#a-experience").css("color", "#616161");
+        });
         $("#a-home").click(function (e) {
             e.preventDefault();
             $("#a-home").css("color", "#1976D2");
