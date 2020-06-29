@@ -196,9 +196,16 @@ body.scale-effect .btn-holder .btn-play{transform:scale(28);-webkit-transform:sc
 #about .about-btn .btn{margin:7px 7px;background:#06A763;color:#fff;width:180px;border-radius:2px;}
 #about .about-btn .btn:hover{background:#05985a;}
 #timeline-education{position:relative;}
-#timeline-education:before{content:'';position:absolute;top:0;bottom:23px;left:50%;height:99.5%;width:4px;opacity:0.3;background:#06A763;}
+#timeline-education:before{
+    content:'';position:absolute;top:0;bottom:23px;left:50%;height:99.5%;width:4px;opacity:0.3;background:#06A763;
+}
 #timeline-experience{position:relative;}
 #timeline-experience::before{
+    content:'';position:absolute;top:0;bottom:23px;left:50%;
+    height:92%;width:4px;opacity:0.3;background:#06A763;
+}
+#timeline-certificate{position:relative;}
+#timeline-certificate::before{
     content:'';position:absolute;top:0;bottom:23px;left:50%;
     height:92%;width:4px;opacity:0.3;background:#06A763;
 }
@@ -222,10 +229,16 @@ body.scale-effect .btn-holder .btn-play{transform:scale(28);-webkit-transform:sc
 .timeline-block .timeline-content .timeline-info h6 small{color:inherit;}
 @media screen and (max-width:768px){.timeline-block .timeline-content:before{display:none;}
 }
-@media only screen and (min-width:768px){#timeline-education::before{left:50%;margin-left:-2px;height:77.1%;opacity:0.4;background:#06A763;}
-#timeline-experience::before{
-    left:50%;margin-left:-2px;height:50%;opacity:0.4;background:#06A763;
-}
+@media only screen and (min-width:768px){
+    #timeline-education::before{
+        left:50%;margin-left:-2px;height:77.1%;opacity:0.4;background:#06A763;
+    }
+    #timeline-experience::before{
+        left:50%;margin-left:-2px;height:50%;opacity:0.4;background:#06A763;
+    }
+    #timeline-certificate::before{
+        left:50%;margin-left:-2px;height:50%;opacity:0.4;background:#06A763;
+    }
 .timeline-block{margin:-4em 0;}
 .timeline-block .card{margin:0;}
 .timeline-block .timeline-dot{width:50px;height:50px;left:50%;top:0;z-index:2;margin-left:-24px;-webkit-transform:translateZ(0);-webkit-backface-visibility:hidden;}

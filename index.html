@@ -54,25 +54,7 @@
 <body>
 
 
-    <!--==========================================
-                  PRE-LOADER
-===========================================-->
-  <!--
-  <div id="loading">
-        <div id="loading-center">
-            <div id="loading-center-absolute">
-                <div class="box-holder animated bounceInDown">
-                    <span class="load-box"><span class="box-inner"></span></span>
-                </div>
-                
-                <div class="text-holder text-center">
-                    <h2>Rexsy Oktiana</h2>
-                    <h6>Web Programmer</h6>
-                </div>
-            </div>
-        </div>
-    </div>
--->
+
     <!--==========================================
                     HEADER
 ===========================================-->
@@ -89,11 +71,24 @@
                 <br>
 
                 <!--OPTIONS-->
-                <a href="#home" id="a-home" style="color:#1976D2"><i class="title-icon fa fa-user"></i>Home</a>
-                <a href="#about" id="a-about"><i class="title-icon fa fa-dashboard"></i>About</a>
-                <a href="#education" id="a-education"><i class="title-icon fa fa-graduation-cap"></i>Education</a>
-                <a href="#skills" id="a-skills"><i class="title-icon fa fa-sliders"></i>Skills</a>
-                <a href="#experience" id="a-experience"><i class="title-icon fa fa-suitcase"></i>Experience</a>
+                <a href="#home" id="a-home" style="color:#1976D2">
+                    <i class="title-icon fa fa-user"></i>Home
+                </a>
+                <a href="#about" id="a-about">
+                    <i class="title-icon fa fa-dashboard"></i>About
+                </a>
+                <a href="#education" id="a-education">
+                    <i class="title-icon fa fa-graduation-cap"></i>Education
+                </a>
+                <a href="#skills" id="a-skills">
+                    <i class="title-icon fa fa-sliders"></i>Skills
+                </a>
+                <a href="#experience" id="a-experience">
+                    <i class="title-icon fa fa-suitcase"></i>Experience
+                </a>
+                <a href="#certificate" id="a-certificate">
+                    <i class="title-icon fa fa-certificate"></i>Certificate
+                </a>
             </div>
 
             <!-- MENU BUTTON -->
@@ -194,6 +189,11 @@
                                     target="_blank">
                                     <i class="fa fa-github"
                                         style="font-size:38px;margin-top:0.4px;margin-left:0.1px; color:#323232!important"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCpDIYPeC6o1WuUAl_IegSnA?view_as=subscriber" class="social  btn-floating white"
+                                    target="_blank">
+                                    <i class="fa fa-youtube-play"
+                                        style="font-size:28px;margin-top:0.4px;margin-left:0.1px; color:red!important"></i>
                                 </a>
                                 <!-- <div class="btn-floating btn-large add-btn bg-dark">
                                     <i class="fa fa-github font-weight-bold" style="font-size: 50px; margin-left: 1px;margin-top:1px;"></i>
@@ -614,6 +614,23 @@
     </section>
 
     <!--==========================================
+                   CERTIFICATE
+===========================================-->
+    <section id="certificate" class="section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="section-title">
+                <h4 class="text-uppercase text-center"><img src="./assets/download/images/icons/certificate.png"
+                        alt="demo">Certificate</h4>
+            </div>
+
+            <div id="timeline-certificate">
+
+            </div>
+        </div>
+    </section>
+
+    <!--==========================================
                   MODALS
 ===========================================-->
     <section>
@@ -806,7 +823,7 @@
                 Rexsy Oktiana ©
                 <script>
                     var d = new Date();
-                    document.write(d.getFullYear());    
+                    document.write(d.getFullYear());
                 </script>
             </p>
         </div>
@@ -829,10 +846,10 @@
     <script src="./assets/download/toggle/js.js"></script>
 
     <script>
-        window.onbeforeunload = function(){
-            window.scrollTo(0,0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
         }
-        $("#scrollup").click(function (e) { 
+        $("#scrollup").click(function (e) {
             e.preventDefault();
             $("#a-home").css("color", "#1976D2");
             $("#a-about").css("color", "#616161");
